@@ -62,26 +62,25 @@
                                         Full Name
                                     </label>
                                     <input type="text" class="form-control" placeholder="Enter your full name" v-model="full_name" required>
-                                    <p>You entered: {{ full_name }}</p>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">
                                         Email Address
                                     </label>
-                                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                                    <input type="email" class="form-control" placeholder="Enter your email" v-model="email" required>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">
                                         Phone Number
                                     </label>
-                                    <input type="tel" class="form-control" placeholder="Enter your phone number">
+                                    <input type="tel" class="form-control" placeholder="Enter your phone number" v-model="phone">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">
                                         Password
                                     </label>
                                     <input type="password" class="form-control" placeholder="Create a password"
-                                        required>
+                                        v-model="password" required >
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">
@@ -121,4 +120,4 @@
         })
     </script>
 </body>
-</html>k
+</html>
